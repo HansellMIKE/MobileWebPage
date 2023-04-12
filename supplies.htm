@@ -1,0 +1,55 @@
+﻿<!--
+Title: supplies Page
+Use: This page shows supplies
+Author: Mike Hansell
+School/Term: Southern illinois university Spring 2023
+Developed: Feb 5, 2023
+Tested: Feb 5, 2023; Passed with no problems.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike's Moving Planner'</title>
+    <link rel="stylesheet" href="themes/THEME.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="supplies" data-title="supplies">
+        <!--Added a Header-->
+        <div data-role="header">
+            <h1>Supplies</h1>
+            <div role="main" class="ui-content">
+                <div data-role="navbar">
+                    <ol>
+
+                        <li><a href="Index.htm" data-prefetch="true" data-transition="flow">Home</a></li>
+                        <li><a href="companies.htm" data-prefetch="true" data-transition="flow">Next</a></li>
+                        <li><a href="instructions.htm" data-prefetch="true" data-transition="flow">Back</a></li>
+                    </ol>
+                </div>
+                <ul style="list-style-type:circle">
+                    <li>Southern Moving Company</li>
+                    <ul>
+                        <li>Cardboard boxes</li>
+                        <li>Bungee Cords</li>
+                        <li>door stoppers</li>
+                    </ul>
+                    <li>Northen Moving Company</li>
+                    <ul>
+                        <li>furniture pads</li>
+                        <li>Box cutters</li>
+                        <li>bubble wrap</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Added a footer-->
+    <div data-role="footer"><p>Mikes Moving planner ©2023 </p></div>
+</body>
+</html>

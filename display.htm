@@ -1,0 +1,63 @@
+﻿<!--
+Title: Display items page
+Use: This page display's' items
+Author: Mike Hansell
+School/Term: Southern illinois university Spring 2023
+Developed: Feb 5, 2023
+Tested: Feb 5, 2023; Passed with no problems.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike's Moving Planner'</title>
+    <link rel="stylesheet" href="themes/THEME.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="display" data-title="display">
+        <!--Added a Header-->
+        <div data-role="header">
+            <h1>Display</h1>
+            <div role="main" class="ui-content">
+                <div data-role="navbar">
+
+                    <ol>
+
+                        <li><a href="Index.htm" data-prefetch="true" data-transition="flow">Home</a></li>
+                        <li><a href="add.htm" data-prefetch="true" data-transition="flow">Next</a></li>
+                        <li><a href="planner.htm" data-prefetch="true" data-transition="flow">Back</a></li>
+                    </ol>
+                    <div data-role="popup" id="popup1" data-dismissable="false" class="ui-content">
+                        <a href="popup1" data-role="button" data-rel="popup" data-position-to="window">Planner</a>
+                        <p>"Picture of a planner"</p>
+                        <a href="" data-rel="back" data-theme="b" data-role="button">Back</a>
+                    </div>
+                    <div data-role="popup" id="popup2" data-dismissable="false" class="ui-content">
+                        <a href="popup2" data-role="button" data-rel="popup" data-position-to="window">tape</a>
+                        <p>"Picture of a planner"</p>
+                        <a href="" data-rel="back" data-theme="b" data-role="button">Back</a>
+                    </div>
+                    <div data-role="popup" id="popup3" data-dismissable="false" class="ui-content">
+                        <a href="popup3" data-role="button" data-rel="popup" data-position-to="window">Cleaning supplies</a>
+                        <p>"Picture of a planner"</p>
+                        <a href="" data-rel="back" data-theme="b" data-role="button">Back</a>
+                    </div>
+                    <div data-role="popup" id="popup4" data-dismissable="false" class="ui-content">
+                        <a href="popup4" data-role="button" data-rel="popup" data-position-to="window">Boxes</a>
+                        <p>"Picture of a planner"</p>
+                        <a href="" data-rel="back" data-theme="b" data-role="button">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Added a footer-->
+    <div data-role="footer"><p>Mikes Moving planner ©2023 </p></div>
+</body>
+</html>

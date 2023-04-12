@@ -1,0 +1,55 @@
+﻿<!--
+Title: Schedule page
+Use: This page is a schedule
+Author: Mike Hansell
+School/Term: Southern illinois university Spring 2023
+Developed: Feb 5, 2023
+Tested: Feb 5, 2023; Passed with no problems.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike's Moving Planner'</title>
+    <link rel="stylesheet" href="themes/THEME.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="Schedule" data-title="Schedule">
+        <!--Added a Header-->
+        <div data-role="header">
+            <h1>Supplies</h1>
+            <div role="main" class="ui-content">
+                <div data-role="navbar">
+                    <p>Supplies</p>
+                    <ol>
+
+                        <li><a href="Index.htm" data-prefetch="true" data-transition="flow">Home</a></li>
+                        <li><a href="utilites.htm" data-prefetch="true" data-transition="flow">Back</a></li>
+                    </ol>
+                    <div>
+                    <a>class="icon-calander"</a>
+                    </div>
+                    <table data-role="table" data-mode="columntoggle" id="displaytable" class="ui-responsive">
+                        <thead>
+                            <tr>
+                                <th>Contact Moving Company</th>
+                                <th>Set up Initial move date</th>
+                                <th>Box up fragile items</th>
+                                <th>label what you are moving</th>
+                                <th>Hire cleaning Service</th>
+
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Added a footer-->
+    <div data-role="footer"><p>Mikes Moving planner ©2023 </p></div>
+</body>
+</html>

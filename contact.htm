@@ -1,0 +1,64 @@
+﻿<!--
+Title: Contact Page
+Use: This page allows user to contact us
+Author: Mike Hansell
+School/Term: Southern illinois university Spring 2023
+Developed: Feb 5, 2023
+Tested: Feb 5, 2023; Passed with no problems.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike's Moving Planner'</title>
+    <link rel="stylesheet" href="themes/THEME.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="contact" data-title="Contact">
+        <!--Added a Header-->
+        <div data-role="header">
+            <h1>Contact</h1>
+            <div role="main" class="ui-content">
+                <div data-role="navbar">
+                    <ol>
+
+                        <li><a href="Index.htm" data-prefetch="true" data-transition="flow">Home</a></li>
+
+                    </ol>
+                    <div>
+                        <a href="howto" data-role="button" data-rel="popup">How to send a message</a>
+                    </div>
+                    <div data-role="popup"> id="howto"
+                        <p>To send a message just click on the send button and we will recieve your message</p>
+
+                    </div>
+                    <!--Added text options for the contact page-->
+                </div>
+                <form action="contact.htm" method="post">
+                    <div class="ui-field-contain">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" value="" />
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" value="" />
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="message">Message:<</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+        <!--Added a footer-->
+        <div data-role="footer"><p>Mikes Moving planner ©2023 </p></div>
+</body>
+</html>

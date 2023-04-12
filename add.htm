@@ -1,0 +1,52 @@
+﻿<!--
+Title: Add Item Page
+Use: This page adds items
+Author: Mike Hansell
+School/Term: Southern illinois university Spring 2023
+Developed: Feb 5, 2023
+Tested: Feb 5, 2023; Passed with no problems.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike's Moving Planner'</title>
+    <link rel="stylesheet" href="themes/THEME.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="add" data-title="add item">
+        <!--Added a Header-->
+        <div data-role="header">
+            <h1>add</h1>
+            <div role="main" class="ui-content">
+                <div data-role="navbar">
+                    <ol>
+                        <li><a href="Index.htm" data-prefetch="true" data-transition="flow">Home</a></li>
+                        <li><a href="display.htm" data-prefetch="true" data-transition="flow">Back</a></li>
+                    </ol>
+                </div>
+                <form action="add.htm" method="post">
+                    <div class="ui-field-containt">
+                        <label for="item title">Item Title</label>
+                        <input type="text" name="itemtitle" id="itemtitle" value="" />
+                    </div>
+                    <div class="ui-field-containt">
+                        <label for="planning ite">Planning item</label>
+                        <input type="text" name="plannningitem" id="planning" value="" />
+                    </div>
+                    <div class="ui-field-containt">
+                        <input type="submit" name="submit"  value="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Added a footer-->
+    <div data-role="footer"><p>Mikes Moving planner ©2023 </p></div>
+</body>
+</html>

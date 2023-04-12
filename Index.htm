@@ -1,0 +1,66 @@
+﻿<!--
+Title: Index
+Use: This page is home 
+Author: Mike Hansell
+School/Term: Southern illinois university Spring 2023
+Developed: Feb 5, 2023
+Tested: Feb 5, 2023; Passed with no problems.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike's Moving Planner'</title>
+    <link rel="stylesheet" href="themes/THEME.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="Index" data-title="Home Page">
+        <!--Added a Header-->
+        <div data-role="header">
+            <h1>Mikes Moving Planner</h1>
+        </div>
+                                                <!--Spacing inbetween grids-->
+        <div role="main" class="ui-content ui-grid-a">
+
+            <div data-role="navbar">
+
+                <ol>
+                    <li><a href="about.htm" data-prefetch="true" data-transition="flow">About</a></li>
+                    <li><a href="instructions.htm" data-prefetch="true" data-transition="flow">Planning Instructions</a></li>
+                    <li><a href="planner.htm" data-prefetch="true" data-transition="flow">Planner</a></li>
+                    <li><a href="contact.htm" data-prefetch="true" data-transition="flow">Contact Us</a></li>
+                </ol>
+                <a>icon-home</a>
+                <!--create grid blocks-->
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <p>
+                            Welcome to Mikes Moving App on this moving app
+                            we will help you plan out your move
+                            this will include information on the supplies that
+                            you will need,the companies that you can use as well
+                            as help you fully plan out your schedule
+                            as well as any repairs that need to be made.
+                            This app will help you move conformtably.
+                        </p>
+                    </div>
+                    <div class="ui-block-b">
+                        <p>
+                            To use this app properly we would recommend to to first realize what it is that you need accomplished this would be a good time to use the planner page.
+                            This app will then take you through the complete proccess of the move and let you know each step that needs to be completed as well as give
+                            you plenty of resources.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Added a footer-->
+    <div data-role="footer"><p>Mikes Moving planner ©2023 </p></div>
+</body>
+</html>
